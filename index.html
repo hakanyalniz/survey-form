@@ -9,13 +9,20 @@
   </head>
   <body>
     <div class="container">
-      <p>
-        <h1>Testing the test</h1>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas illum
-        repellat modi atque, quidem iste, impedit officiis vero repellendus odit
-        reiciendis expedita neque nihil consequuntur qui? Perspiciatis cum
-        <a>necessitatibus nobis!</a>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">
+        Please take your time and fill in the survey below to help us improve
+        the platform
       </p>
+      <form action="/" id="survey-form">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+        <label for="number">Age(optional)</label>
+        <input type="number" name="number" id="number" min="0" max="100" />
+        <input type="submit" />
+      </form>
     </div>
     <script src="scripts/script.js"></script>
   </body>
