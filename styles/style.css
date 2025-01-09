@@ -24,8 +24,8 @@ body {
 
 /* Basic container for layout */
 .container {
-  width: 80%; /* Max width of 80% of the page */
-  margin: 0 auto; /* Center it horizontally */
+  max-width: 720px;
+  margin: 2rem auto 0 auto; /* Center it horizontally */
 }
 
 /* Header styles */
@@ -60,6 +60,91 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
+/* Later on check this */
 input[type="number"] {
-  -moz-appearance: textfield;
+  appearance: none;
+}
+
+/* Form container */
+#survey-form {
+  background-color: rgb(0, 1, 82, 0.8);
+  width: 100%;
+  max-width: 600px;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+}
+
+/* Groups up the various inputs */
+#survey-form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+/* Label styling */
+label {
+  margin-bottom: 8px;
+}
+
+/* Input styling */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* Submit button styling */
+#submit {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+#submit:hover {
+  background-color: #357abd;
+}
+
+/* Radio buttons and checkbox styling */
+label input[type="radio"],
+label input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Textarea styling */
+textarea {
+  resize: vertical;
+}
+
+/* Select dropdown styling */
+select {
+  background-color: #f9f9f9;
+  padding: 12px;
+  font-size: 16px;
+}
+
+/* Focus outline */
+#survey-form input[type="text"]:focus,
+#survey-form input[type="email"]:focus,
+#survey-form input[type="number"]:focus,
+#survey-form textarea:focus,
+#survey-form select:focus {
+  outline: 2px solid #4a90e2;
 }
