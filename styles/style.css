@@ -1,0 +1,52 @@
+/* General reset for margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic body styles */
+body {
+  font-family: Arial, sans-serif; /* Default font */
+  font-size: 16px;
+  line-height: 1.6; /* Spacing between lines */
+  color: #333; /* Dark text color */
+
+  background-color: #f4f4f4; /* Light background color */
+  padding: 20px; /* Padding around the page */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Basic container for layout */
+.container {
+  width: 80%; /* Max width of 80% of the page */
+  margin: 0 auto; /* Center it horizontally */
+}
+
+/* Header styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+  margin-bottom: 10px; /* Add space below headings */
+}
+
+/* Links */
+a {
+  text-decoration: none; /* Remove underline from links */
+  color: #007bff; /* Blue color for links */
+  cursor: pointer;
+}
+
+a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
