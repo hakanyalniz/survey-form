@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 /* General reset for margin, padding, and box-sizing */
 * {
   margin: 0;
@@ -7,11 +9,19 @@
 
 /* Basic body styles */
 body {
-  font-family: Arial, sans-serif; /* Default font */
+  font-family: "Montserrat", Arial, Helvetica, sans-serif; /* Default font */
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.6; /* Spacing between lines */
-  color: #333; /* Dark text color */
+  color: #ffffff;
 
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url("../assets/survey-background.jpg");
+  background-size: cover;
   background-color: #f4f4f4; /* Light background color */
   padding: 20px; /* Padding around the page */
 
@@ -38,6 +48,16 @@ h6 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: normal;
   margin-bottom: 10px; /* Add space below headings */
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.mini-text {
+  font-size: 10px;
+  vertical-align: super;
+  opacity: 0.6;
 }
 
 /* Links */
@@ -67,16 +87,29 @@ input[type="number"] {
 
 /* Form container */
 #survey-form {
-  background-color: rgb(0, 1, 82, 0.8);
+  background-color: rgb(10, 11, 32, 63%);
   width: 100%;
-  max-width: 600px;
+  max-width: 720px;
   padding: 40px;
+  margin-bottom: 30px;
   border-radius: 8px;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
   gap: 10px;
   color: white;
+
+  /* Add the blur effect */
+  backdrop-filter: blur(10px);
+}
+
+#description,
+#title {
+  text-align: center;
+}
+
+#description {
+  margin-bottom: 20px;
 }
 
 /* Groups up the various inputs */
@@ -130,6 +163,7 @@ label input[type="checkbox"] {
 
 /* Textarea styling */
 textarea {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   resize: vertical;
 }
 
